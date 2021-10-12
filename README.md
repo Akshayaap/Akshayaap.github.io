@@ -1,2 +1,2 @@
 # the-akshay
-[Personal Website!](https://www.Akshayaap.github.io)
+[Personal Website!](https://Akshayaap.github.io)
