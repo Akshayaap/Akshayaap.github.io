@@ -9,8 +9,16 @@ import Contact  from './pages/Contact'     ;
 import About    from './pages/About'       ;
 import Other    from './pages/Other'       ;
 import Footer   from './components/Footer' ;
+import {Component} from'react';
+import html2canvas from 'html2canvas';
 
-const App = () => {
+class  App extends Component{
+
+
+
+  render(){
+
+  
   return (
 
     <div className="App">
@@ -35,6 +43,5 @@ const App = () => {
 
 
   );
-}
-
+}}
 export default App;

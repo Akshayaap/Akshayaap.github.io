@@ -13,8 +13,10 @@ const Navbar=()=> {
     return (
         <React.Fragment>
             <nav className="navbar">
+            
                 <div className="nav-container" >
-                    <NavLink exact to="/" className="nav-logo">
+                <NavLink exact to="/" className="nav-logo">
+                        <img src={process.env.PUBLIC_URL+'assets/logo.png'} width="80px" height="80px" />
                     </NavLink>
 
                     <ul className={click?"nav-menu active":"nav-menu"}>
