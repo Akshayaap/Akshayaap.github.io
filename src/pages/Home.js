@@ -5,15 +5,12 @@ import Profile from './../components/Profile/Profile'
 
 const Home=()=>{
 
-
     return(
-        <div class="home">
+        <div className="home">
             
             <Profile />
-
+            
         </div>
-
-
     );
 }
 

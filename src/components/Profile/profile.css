@@ -3,12 +3,15 @@
 
 
 .profile{
-    margin-top: 20px;
-    border: 1px solid #0006;
+    background: linear-gradient(to right bottom, #333333, #262626, #1A1A1A, #0D0D0D, #000000);
+    color: #2AE600;
+            margin-top: 20px;
+        text-shadow: 1px 0 1px #2AE600;
+            margin-bottom: 20px;
+    border: 1px solid #2AE600;
     border-radius: 10px;
-    box-shadow: 2px 5px 10px rgb(255, 255, 255);
-    background: rgb(219, 219, 219);
-    display: flex;
+    box-shadow: inset 2px 2px 1px #000000;
+           
     justify-content: center;
     
 }
@@ -26,10 +29,19 @@
 
 
 .bio-data{
-    width: 300px;
-    height: 100px;
-    background: #000f;
+    text-align: start;
+    width: auto;
+    background: #0001;
     justify-content: start;
     align-self: center;
     margin: 7px;
+}
+
+.bio-data > .name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.5em;
+}
+
+.bio-data .info {
+    text-align: start;
 }
