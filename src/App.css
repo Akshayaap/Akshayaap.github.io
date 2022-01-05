@@ -6,16 +6,14 @@
 }
 
 body{
-    background-color: #fff
+    background-color: #fff;
+    
 }
 
 .pages{
     color:#316685;
-    text-align: center;
 }
 
-
-.blank{
-    height: 820px;
-    width: 100%;
+.App{
+    display: inline;
 }
