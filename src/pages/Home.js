@@ -8,13 +8,13 @@ import  RightPane from '../components/homepage/right-pane/RightPane';
 const Home=()=>{
 
     return(
-        <Container className="home">
+        <Container className="home" fluid>
             <Row>
-                <Col md={4} className='test'  >
-                
+                <Col lg={4} className='test'  >
+                <LeftPane />
                 </Col>
-                <Col md={8} className='test'>
-                    
+                <Col lg={8} className='test'>
+                    <RightPane />
                     
                 </Col>
             </Row>

@@ -95,7 +95,7 @@ color: #000c;
 }
 
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:991px) {
     .nav-menu{
         display: flex;
         flex-direction: column;
