@@ -1,11 +1,12 @@
 import React from 'react';
 import './rightpane.css';
-const RPItem=(arg1,arg2,arg3)=>{
+const RPItem=(props)=>{
+    
     return (
         <div className="rp-item">
-            <h3>arg1</h3>
-            <h4>arg2</h4>
-            <h4>arg3</h4>
+            <h3>{props.arg1}</h3>
+            <h5>{props.arg2}</h5>
+            <h5>{props.arg3}</h5>
         </div>
     )
 }

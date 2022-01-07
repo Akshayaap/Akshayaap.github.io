@@ -10,10 +10,10 @@ const Home=()=>{
     return(
         <Container className="home" fluid>
             <Row>
-                <Col lg={4} className='test'  >
+                <Col lg={4}  >
                 <LeftPane />
                 </Col>
-                <Col lg={8} className='test'>
+                <Col lg={8} >
                     <RightPane />
                     
                 </Col>

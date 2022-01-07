@@ -1,12 +1,13 @@
 
 
 .rp-item{
+
+    margin: 8px;
+    padding: 8px;
     display: block;
-    background: #ffffffff;
+    background: #0003;
     border: 1px solid #000000ff;
     border-radius: 12px;
-    margin: 3px;
-    padding: 3px;
 }
 
 .right{
