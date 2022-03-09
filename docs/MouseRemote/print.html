@@ -137,7 +137,7 @@
                     <main>
                         <h1 id="what-is-mouseremote"><a class="header" href="#what-is-mouseremote">What is MouseRemote</a></h1>
 <ul>
-<li>MouseRemote is Project which contains an Android Application and Windows Excecutable Program.</li>
+<li>It is Project which contains an Android Application and Windows Excecutable Program.</li>
 <li>Main Use of MouseRemote project is to use Smartphone as touchpad of laptop.</li>
 <li>It has two main Component:
 <ol>
@@ -148,8 +148,8 @@
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="why-mouseremote"><a class="header" href="#why-mouseremote">Why MouseRemote</a></h1>
 <ul>
-<li>MouseRemote is Easy to use.</li>
-<li>MouseRemote Provides Features like:
+<li>It is Easy to use.</li>
+<li>It Provides Features like:
 <ol>
 <li>Mouse Pointer Control</li>
 <li>Keyborad Control (Draft Release)</li>
@@ -170,11 +170,11 @@
 </ul>
 <h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
 <ul>
-<li>
+<li>Steps:
 <ol>
 <li>Download <code>.zip</code> file from <a href="https://github.com/Akshayaap/MouseRemoteServer/releases">MouseRemote Server Release</a>.</li>
 <li>Install Android Application from <a href="https://github.com/Akshayaap/MouseRemote/releases">MouseRemote Release</a>.</li>
-<li>Extract <code>zip</code> in your windows machine in a directory you like (Note : Keep ControlPanel.exe and MouseRemote.exe in same forlder).</li>
+<li>Extract <code>zip</code> in your windows machine in a directory you like (Note : Keep ControlPanel.exe and MouseRemote.exe in same folder).</li>
 <li>Now start ControlPanel.exe by double clicking on it.</li>
 <li>You can Start server, stop server by various buttons from UI.</li>
 <li>After starting Server, run MouseRemote Application in Android.</li>
@@ -197,6 +197,20 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
