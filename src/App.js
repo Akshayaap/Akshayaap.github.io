@@ -23,7 +23,10 @@ class App extends Component {
 
       <div className="App">
         <Router>
-          <Navbar />
+          <header>
+            <Navbar />
+
+          </header>
 
           <div className="pages">
             <Switch>

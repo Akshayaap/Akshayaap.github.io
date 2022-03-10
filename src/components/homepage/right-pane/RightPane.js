@@ -5,6 +5,10 @@ import './rightpane.css';
 
 const RighPane = () => {
 
+
+
+
+
     const [items, setItems] = React.useState([['M Tech', 'Ahemedabad', '2022'],
     ['item4', 'item5', 'item6'],
     ['item7', 'item8', 'item9'],

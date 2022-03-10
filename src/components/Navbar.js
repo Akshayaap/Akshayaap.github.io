@@ -1,25 +1,25 @@
-import React from        'react'           ;
-import { NavLink } from  'react-router-dom';
-import                   './navbar.css'    ;
-import { useState } from 'react'           ;
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './navbar.css';
+import { useState } from 'react';
 
 
-const Navbar=()=> {
+const Navbar = () => {
 
     const [click, setClick] = useState(false);
 
-    const handleClick=()=>setClick(!click);
+    const handleClick = () => setClick(!click);
 
     return (
         <React.Fragment>
             <nav className="navbar">
-            
+
                 <div className="nav-container" >
-                <NavLink exact to="/" className="nav-logo">
-                        <img src={process.env.PUBLIC_URL+'assets/logo.png'} width="80px" height="80px" />
+                    <NavLink exact to="/" className="nav-logo">
+                        <img src={process.env.PUBLIC_URL + 'assets/logo.png'} width="80px" height="80px" />
                     </NavLink>
 
-                    <ul className={click?"nav-menu active":"nav-menu"}>
+                    <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
                             <NavLink exact to="/" className="nav-link" onClick={handleClick}>
                                 Home
@@ -54,7 +54,7 @@ const Navbar=()=> {
                     </ul>
 
                     <div className="nav-icon" onClick={handleClick}>
-                        <i className={click?"fas fa-times":'fas fa-bars'}>
+                        <i className={click ? "fas fa-times" : 'fas fa-bars'}>
 
                         </i>
                     </div>
