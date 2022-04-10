@@ -4,17 +4,43 @@ import './footer.css'
 
 
 
-const Footer=()=>{
-    
+const Footer = () => {
+
     //html2canvas(document.querySelector("body"),document.querySelector("home"));
-    
-    return(
+
+    return (
         <div className="footer">
-            ©The Akshay PVT. LTD.
-            <br />
-            <a href="https://www.twitter.com/_the_Akshay">@_the_Akshay</a>
-            
-            
+            <div className="footer-content">
+                <ul className='social'>
+                    <li className='social-item'>
+                        <a href='https://www.twitter.com/_the_akshay'>
+                            <div className='social-icon'></div>
+                        </a>
+                        <div className='social-text'>Twitter</div>
+                    </li>
+                    <li className='social-item'>
+                        <a href='mailto:akshaykumarparmar51@gmail.com'>
+                            <div className='social-icon'></div>
+                        </a>
+
+                        <div className='social-text'>Gmail</div>
+                    </li>
+                    <li className='social-item'>
+                        <a href='https://www.twitter.com/Akshayaap'>
+                            <div className='social-icon'></div>
+                        </a>
+                        <div className='social-text'>GitHub</div>
+                    </li>
+                    <li className='social-item'>
+                        <a href='lol'>
+                            <div className='social-icon'></div>
+                        </a>
+                        <div className='social-text'>Linked in</div>
+                    </li>
+                </ul>
+            </div>
+
+
         </div>
     );
 }

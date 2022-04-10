@@ -3,11 +3,11 @@ import React from 'react';
 
 
 
-const Products=()=>{
-    return(
+const Products = () => {
+    return (
         <div className="products blank">
             <h1>
-                Products
+                Projects
             </h1>
         </div>
     );

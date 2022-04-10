@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import Products from './pages/Products'
+import Projects from './pages/Projects'
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import About from './pages/About';
@@ -31,7 +31,7 @@ class App extends Component {
           <div className="pages">
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/products" component={Products} />
+              <Route exact path="/projects" component={Projects} />
               <Route exact path="/services" component={Services} />
               <Route exact path="/other-sites" component={Other} />
               <Route exact path="/about" component={About} />

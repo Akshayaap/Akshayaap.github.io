@@ -15,8 +15,9 @@ const Navbar = () => {
             <nav className="navbar">
 
                 <div className="nav-container" >
+
                     <NavLink exact to="/" className="nav-logo">
-                        <img src={process.env.PUBLIC_URL + 'assets/logo.png'} width="80px" height="80px" />
+                        THE AKSHAY
                     </NavLink>
 
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -26,8 +27,8 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink exact to="/products" activeClassName="active" className="nav-link" onClick={handleClick}>
-                                Products
+                            <NavLink exact to="/projects" activeClassName="active" className="nav-link" onClick={handleClick}>
+                                Projects
                             </NavLink>
                         </li >
                         <li className="nav-item">
