@@ -25,9 +25,10 @@ class Sorting {
         this.merge = this.merge.bind(this);
         this.mergeSortHelper = this.mergeSortHelper.bind(this);
         this.quickSort = this.quickSort.bind(this);
-
+        this.insertionSort = this.insertionSort.bind(this);
         this.quickSortHelper = this.quickSortHelper.bind(this);
         this.partition = this.partition.bind(this);
+        this.selectionSort = this.selectionSort.bind(this);
     }
 
     generateArray() {
@@ -201,7 +202,81 @@ class Sorting {
     }
 
 
+    //bogo sort
+    async bogoSort() {
+        let sorted = false;
+        while (!sorted) {
+            sorted = true;
+            for (let i = 0; i < this.size - 1; i++) {
+                if (this.array[i] > this.array[i + 1]) {
+                    [this.array[i], this.array[i + 1]] = [this.array[i + 1], this.array[i]];
+                    this.elements[i].style.height = this.array[i] + 'px';
+                    this.elements[i + 1].style.height = this.array[i + 1] + 'px';
+                    this.elements[i].style.backgroundColor = '#00ff00';
+                    this.elements[i + 1].style.backgroundColor = '#00ff00';
+                    sorted = false;
+                    await sleep(100);
+                    this.elements[i].style.backgroundColor = '#00ffff';
+                    this.elements[i + 1].style.backgroundColor = '#00ffff';
+                }
+            }
+        }
+    }
 
+    //insertion sort with await function
+    async insertionSort() {
+        for (let i = 1; i < this.size; i++) {
+
+            let j = i;
+            this.elements[i + 1].style.backgroundColor = '#ff0000';
+            while (j > 0 && this.array[j] < this.array[j - 1]) {
+                [this.array[j], this.array[j - 1]] = [this.array[j - 1], this.array[j]];
+                this.elements[j].style.height = this.array[j] + 'px';
+                this.elements[j - 1].style.height = this.array[j - 1] + 'px';
+
+                this.elements[j - 1].style.backgroundColor = '#00ff00';
+                await sleep(100);
+
+                this.elements[j - 1].style.backgroundColor = '#00ffff';
+                j--;
+            }
+
+            this.elements[i + 1].style.backgroundColor = '#00ffff';
+        }
+    }
+
+
+    //selection sort with await function
+    async selectionSort() {
+        for (let i = 0; i < this.size - 1; i++) {
+            let min = i;
+            for (let j = i + 1; j < this.size; j++) {
+                this.elements[i].style.backgroundColor = '#00ff00';
+                this.elements[j].style.backgroundColor = '#00ff00';
+                await sleep(100);
+                this.elements[i].style.backgroundColor = '#00ffff';
+                this.elements[j].style.backgroundColor = '#00ffff';
+                if (this.array[j] < this.array[min]) {
+                    this.elements[min].style.backgroundColor = '#00ffff';
+                    min = j;
+                    this.elements[min].style.backgroundColor = '#0000ff';
+                }
+            }
+
+            if (min != i) {
+                [this.array[i], this.array[min]] = [this.array[min], this.array[i]];
+                this.elements[i].style.height = this.array[i] + 'px';
+                this.elements[min].style.height = this.array[min] + 'px';
+                this.elements[i].style.backgroundColor = '#ff0000';
+                this.elements[min].style.backgroundColor = '#ff0000';
+                await sleep(100);
+                this.elements[i].style.backgroundColor = '#00ffff';
+                this.elements[min].style.backgroundColor = '#00ffff';
+            }
+        }
+    }
 }
+
+
 
 export { Sorting };
